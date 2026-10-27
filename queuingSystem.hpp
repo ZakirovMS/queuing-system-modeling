@@ -10,6 +10,7 @@
 
 namespace qs
 {
+  template< class K, class M >
   class QueuingSystem
   {
   public:
@@ -17,10 +18,10 @@ namespace qs
   private:
     std::list< Event > eventsList;
 
-    std::vector< Source > sourceList;
-    std::vector< Device > deviceList;
+    std::vector< Source< K > > sourceList;
+    std::vector< Device< M > > deviceList;
 
-    std::vector< Bid > buffer;
+    Buffer buff;
   };
 }
 

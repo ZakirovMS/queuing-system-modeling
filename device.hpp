@@ -3,9 +3,10 @@
 
 namespace qs
 {
+  template< class M >
   class Device
   {
-
+    Device(M distLaw);
   };
 }
 

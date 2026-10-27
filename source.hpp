@@ -3,9 +3,10 @@
 
 namespace qs
 {
+  template < class K >
   class Source
   {
-
+    Source(K distLaw);
   };
 }
 
